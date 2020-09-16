@@ -1,12 +1,12 @@
-#AI_bot
+# AI_bot
 
-###Firstly<br>
+### Firstly<br>
 Create file called .env in environment folder
 ```
 TOKEN=token_of_telegram_bot
 ```
 
-###Starting<br>
+### Starting<br>
 **To start up the project do the following commands**<br>
 Requires python 3.6+
 ```
