@@ -1,5 +1,4 @@
-import telebot
-from main import bot
+from .. import bot
 
 
 @bot.message_handler(commands=['start', 'help'])
