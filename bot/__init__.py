@@ -7,4 +7,5 @@ from bot.telegram import *
 
 
 def run_telegram_bot():
+    print("Bot started polling")
     bot.polling()

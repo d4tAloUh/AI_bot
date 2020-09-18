@@ -15,5 +15,5 @@ Requires python 3.6+
 3. activate
 cd ../..
 4. pip install -r requirements.txt
-5. python main.py
+5. python __init__.py
 ```
