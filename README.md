@@ -15,5 +15,7 @@ Requires python 3.6+
 3. activate
 cd ../..
 4. pip install -r requirements.txt
-5. python __init__.py
+5. python __init__.py 
+or you could use script
+5. run.bat OR run.sh (MacOS)
 ```
