@@ -8,7 +8,7 @@ missTemplates = ['I don\'t understand you. Try to talk about pizza...', 'What\'s
 # }
 
 totalDict = {
-    'margherita': pizzasTemplates,
+    'margarita': pizzasTemplates,
     'chicago': pizzasTemplates,
     'greek': pizzasTemplates,
     'new-york': pizzasTemplates,
@@ -17,12 +17,11 @@ totalDict = {
     'carbonara': pizzasTemplates,
     'prosciutto': pizzasTemplates,
     'gorgonzola': pizzasTemplates,
-    'francescana': pizzasTemplates,
+    'francesca': pizzasTemplates,
     'mimosa': pizzasTemplates,
     'bbq': pizzasTemplates,
-    'barbeque': pizzasTemplates,
+    'barbecue': pizzasTemplates,
     'love': ['What else do you love?'],
     'prefer': ['Why\'s that'],
     'want': ['Have you tried BBQ pizza'],
-
 }
