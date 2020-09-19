@@ -15,7 +15,8 @@ questionTemplate = [
     'Why are you asking?',
     'Do you think I know everything?',
     'I`m not really sure about that',
-    'I think it`s better to ask Google'
+    'I think it`s better to ask Google',
+    'What do you mean by that?'
 ]
 
 suggestionsTemplates = [
@@ -39,18 +40,23 @@ greetingTemplates = [
     'Oh hi there!',
     'Greetings!',
     'It`s nice to see you!',
-
 ]
 
 missTemplates = [
     'I don\'t understand you',
     'What`s the matter with that',
     "Try to specify the subject",
+    "Does that really matter?",
     # 'Do you know that americans eat approximately 350 slices per second? Crazy, isn`t it?',
     # 'Fun fact: 36% of all pizza orders want their pizza topped with pepperoni.',
     # 'Btw, over 5 billion pizzas are sold worldwide each year.',
     # 'Do you know that October has been celebrated as National Pizza month since 1987?',
     # 'Fun fact: Women are more likely to order vegetarian options as opposed to men.'
+]
+
+confidenceTemplates = [
+    'Are you sure about that?',
+    'Do you doubt that?',
 ]
 
 totalDict = {
@@ -118,10 +124,20 @@ totalDict = {
     'bad': adjectiveTemplates,
 
     "hello": greetingTemplates,
-    "hi":greetingTemplates,
-    "greetings":greetingTemplates,
-    "morning":greetingTemplates,
-    "afternoon":greetingTemplates,
-    "evening":greetingTemplates,
-    "howdy":greetingTemplates
+    "hi": greetingTemplates,
+    "greetings": greetingTemplates,
+    "morning": greetingTemplates,
+    "afternoon": greetingTemplates,
+    "evening": greetingTemplates,
+    "howdy": greetingTemplates,
+
+    "maybe": confidenceTemplates,
+    "definitely": confidenceTemplates,
+    'certain': confidenceTemplates,
+    'probably': confidenceTemplates,
+    'might': confidenceTemplates,
+    'perhaps': confidenceTemplates,
+    'possible': confidenceTemplates,
+    'likely': confidenceTemplates
+
 }
