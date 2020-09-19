@@ -8,7 +8,10 @@ pizzasTemplates = [
 feelingsTemplates = [
     'What exactly do you {} about it?',
     'Tell me more about it',
-    'Oh, I know that feeling...'
+    'Oh, I know that feeling...',
+    'I have the same feeling as you, believe me 🤥',
+    'You should speak about it to some of your friend, not me 🥴',
+    'I am not your personal psychologist, i will be only if you pay me some cash 💵'
 ]
 
 questionTemplate = [
