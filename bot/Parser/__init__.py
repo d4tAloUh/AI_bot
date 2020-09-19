@@ -1,5 +1,5 @@
 import random
-
+import re
 from ..config import totalDict, pizzasTemplates, missTemplates
 
 '''
@@ -11,8 +11,11 @@ from ..config import totalDict, pizzasTemplates, missTemplates
 
 
 def parse_sentence(sentence: str):
-    sentence = sentence.lower().split(" ")
-    for word in sentence:
+    # leave only words, remove every special character
+    cleanSentence = re.sub('\W+', ' ', sentence)
+    # split the sentence into words
+    wordList = cleanSentence.lower().split(" ")
+    for word in wordList:
         try:
             template = random.choice(totalDict[word])
             return template.format(word.capitalize())
