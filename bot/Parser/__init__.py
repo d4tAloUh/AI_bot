@@ -1,5 +1,4 @@
 import random
-import re
 from ..config import keyWords, totalDict, questionTemplate, missTemplates
 
 '''
@@ -23,12 +22,25 @@ def sentence_transformation(wordList):
 
 
 def parse_sentence(sentence: str):
+    # adds to dictionary all combinations of keyValues and *
     sentence = sentence.replace('?', ' ?')
+
     # split the sentence into words
     wordList = sentence.lower().split(" ")
-    if '?' in wordList:
-        return random.choice(questionTemplate)
-    return random.choice(totalDict[sentence_transformation(wordList)])
+    # if '?' in wordList:
+    #     return random.choice(questionTemplate)
+
+    # checks whether there is a given combination in dictionary
+    # -> if not returns one of  missing templates
+    formattedComb = sentence_transformation(wordList)
+    if not (formattedComb in totalDict):
+        return random.choice(missTemplates)
+
+    # otherwise returns related template
+    return random.choice(totalDict[formattedComb])
+
+
+    # previous code
 
     # for word in wordList:
     #     try:
@@ -37,4 +49,4 @@ def parse_sentence(sentence: str):
     #         # return template.format(word.capitalize())
     #     except KeyError:
     #         continue
-    return random.choice(missTemplates)
+    # return random.choice(missTemplates)

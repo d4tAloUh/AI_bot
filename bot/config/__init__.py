@@ -77,11 +77,6 @@ missTemplates = [
     'Tell me more about it 😈',
     'I want to hear more about this',
     'I\'ll call you later about that 📱'
-    # 'Do you know that americans eat approximately 350 slices per second? Crazy, isn`t it?',
-    # 'Fun fact: 36% of all pizza orders want their pizza topped with pepperoni.',
-    # 'Btw, over 5 billion pizzas are sold worldwide each year.',
-    # 'Do you know that October has been celebrated as National Pizza month since 1987?',
-    # 'Fun fact: Women are more likely to order vegetarian options as opposed to men.'
 ]
 
 confidenceTemplates = [
@@ -91,7 +86,7 @@ confidenceTemplates = [
     'Does it really matter?',
     'I dont think so, but whatever. Tell me what\'s your favorite pizza? I would like to cook it 🍕',
     'My mommy doesn\'t think so',
-    'Nice to hear it, but i would doubt that 😏' ,
+    'Nice to hear it, but i would doubt that 😏',
     'Ok boss!',
     'Well i think that... Ok, whatever...',
     'Doesn\'t matter for me 😉',
@@ -104,17 +99,20 @@ agreeTemplates = [
     'That`s great!'
 ]
 
-keyWords = [
-    'i', 'love', 'prefer', 'like', 'enjoy', 'hate','dislike', 'pizza',
-    'recommend', 'recommended',  'suggest', 'suggested', 'want', 'wanted','advise', 'advised',
-    'is', 'are',  'do',  'does',  'why',
-    'what', 'where', 'when','how',  '?',
-    'good', 'great', 'amazing', 'awesome', 'best', 'favourite', 'delicious', 'breathtaking', 'tasty', 'mouth-watering',
-    'appetizing', 'flavoursome', 'delectable', 'disgusting', 'awful','terrible','tasteless', 'horrific','bad',
-    "hello", "hi","greetings", "morning", "afternoon","evening", "howdy",
-    "maybe", "definitely",  'certain',  'probably',  'might', 'perhaps',  'possible',  'likely'
+welcomeTemplates = [
+    'Your welcome!',
+    'No worries!'
 ]
 
+keyWords = [
+    'i', 'love', 'prefer', 'like', 'enjoy', 'hate', 'dislike', 'pizza',
+    'recommend', 'recommended', 'suggest', 'suggested', 'want', 'wanted', 'advise', 'advised',
+    'is', 'are', 'do', 'does', 'why', 'what', 'where', 'when', 'how', '?',
+    'good', 'great', 'amazing', 'awesome', 'best', 'favourite', 'delicious', 'breathtaking', 'tasty', 'mouth-watering',
+    'appetizing', 'flavoursome', 'delectable', 'disgusting', 'awful', 'terrible', 'tasteless', 'horrific', 'bad',
+    "hello", "hi", "greetings", "morning", "afternoon", "evening", "howdy",
+    "maybe", "definitely", 'certain', 'probably', 'might', 'perhaps', 'possible', 'likely'
+]
 
 totalDict = {
     'margarita': pizzasTemplates,
@@ -150,16 +148,27 @@ totalDict = {
     'advise': suggestionsTemplates,
     'advised': suggestionsTemplates,
 
-    'is': questionTemplate,
-    'are': questionTemplate,
-    'do': questionTemplate,
-    'does': questionTemplate,
-    'why': questionTemplate,
-    'what': questionTemplate,
-    'where': questionTemplate,
-    'when': questionTemplate,
-    'how': questionTemplate,
+    'is * ?': questionTemplate,
+    'are * ?': questionTemplate,
+    'do * ?': questionTemplate,
+    'does * ?': questionTemplate,
+    'why * ?': questionTemplate,
+    'what * ?': questionTemplate,
+    'where * ?': questionTemplate,
+    'when * ?': questionTemplate,
+    'how * ?': questionTemplate,
     '?': questionTemplate,
+
+    '* is * ?': questionTemplate,
+    '* are * ?': questionTemplate,
+    '* do * ?': questionTemplate,
+    '* does * ?': questionTemplate,
+    '* why * ?': questionTemplate,
+    '* what * ?': questionTemplate,
+    '* where * ?': questionTemplate,
+    '* when * ?': questionTemplate,
+    '* how * ?': questionTemplate,
+    '* ?': questionTemplate,
 
     'good': adjectiveTemplates,
     'great': adjectiveTemplates,
@@ -201,4 +210,6 @@ totalDict = {
     'yes': confidenceTemplates,
     'of course': confidenceTemplates,
 
+    'thank you': welcomeTemplates,
+    'thanks': welcomeTemplates,
 }

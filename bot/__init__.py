@@ -14,7 +14,6 @@ def run_parser():
     while True:
         text = input()
         print(parse_sentence(text))
-        print(parse_sentence(text))
         if text == 'c':
             break
 
