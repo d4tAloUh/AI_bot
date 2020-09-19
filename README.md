@@ -1,4 +1,4 @@
-# AI_bot
+# Alexey, the 🍕 pizza lover 🍕 (AI-bot)
 
 ### Firstly<br>
 Create file called .env in environment folder
