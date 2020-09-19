@@ -11,10 +11,7 @@ from ..config import totalDict, pizzasTemplates, missTemplates
 
 
 def parse_sentence(sentence: str):
-    template = ''
     sentence = sentence.lower().split(" ")
-    stopWords = []
-    sentence = [i for i in sentence if not i in stopWords]
     for word in sentence:
         try:
             template = random.choice(totalDict[word])
