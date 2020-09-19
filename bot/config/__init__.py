@@ -22,7 +22,17 @@ suggestionsTemplates = [
     'Have you tried BBQ pizza?',
     'Have you tried Mimosa pizza?',
     'Have you tried California pizza?',
+    'I think you might like Chicago pizza',
+    'Try any pizza with mushrooms. It`s considered to be the second best topping in the world!',
+    'What about topping with black olives?'
+]
 
+adjectiveTemplates = [
+    'Mmm... couldn`t agree more. Is there any pizza you think is overrated?',
+    'That`s true! What do you think about pizzas with pineapple in it?',
+    'I also think that! Do you know that the best pizza in the world is considered to be Pepperoni?',
+    'Absolutely disagree. Maybe our opinions will coincide on another thing.',
+    'We are of one mind! Btw, fun fact: the word pizza dates back to 997 CE.'
 ]
 
 missTemplates = [
@@ -76,5 +86,25 @@ totalDict = {
     'advise': suggestionsTemplates,
     'advised': suggestionsTemplates,
 
-    'pizza': ['I love pizza']
+    'good': adjectiveTemplates,
+    'great': adjectiveTemplates,
+    'amazing': adjectiveTemplates,
+    'awesome': adjectiveTemplates,
+    'best': adjectiveTemplates,
+    'favourite': adjectiveTemplates,
+    'delicious': adjectiveTemplates,
+    'breathtaking': adjectiveTemplates,
+    'tasty': adjectiveTemplates,
+    'mouth-watering': adjectiveTemplates,
+    'appetizing': adjectiveTemplates,
+    'flavoursome': adjectiveTemplates,
+    'delectable': adjectiveTemplates,
+    'disgusting': adjectiveTemplates,
+    'awful': adjectiveTemplates,
+    'terrible': adjectiveTemplates,
+    'tasteless': adjectiveTemplates,
+    'horrific': adjectiveTemplates,
+    'bad': adjectiveTemplates,
+
+    'pizza': ['I love pizza. Let`s talk about it!']
 }
