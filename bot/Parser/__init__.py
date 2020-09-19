@@ -12,9 +12,11 @@ from ..config import totalDict, pizzasTemplates, missTemplates
 
 def parse_sentence(sentence: str):
     # leave only words, remove every special character
-    cleanSentence = re.sub('\W+', ' ', sentence)
+    # sentence = sentence.replace('?', ' ?')
+    # cleanSentence = re.sub('\W+|\?+', ' ', sentence)
+    # print(cleanSentence)
     # split the sentence into words
-    wordList = cleanSentence.lower().split(" ")
+    wordList = sentence.lower().split(" ")
     for word in wordList:
         try:
             template = random.choice(totalDict[word])

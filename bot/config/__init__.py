@@ -66,6 +66,17 @@ totalDict = {
     'hate': feelingsTemplates,
     'dislike': feelingsTemplates,
 
+    'pizza': ['I love pizza. Let`s talk about it!'],
+
+    'recommend': suggestionsTemplates,
+    'recommended': suggestionsTemplates,
+    'suggest': suggestionsTemplates,
+    'suggested': suggestionsTemplates,
+    'want': suggestionsTemplates,
+    'wanted': suggestionsTemplates,
+    'advise': suggestionsTemplates,
+    'advised': suggestionsTemplates,
+
     'is': questionTemplate,
     'are': questionTemplate,
     'do': questionTemplate,
@@ -76,15 +87,6 @@ totalDict = {
     'when': questionTemplate,
     'how': questionTemplate,
     '?': questionTemplate,
-
-    'recommend': suggestionsTemplates,
-    'recommended': suggestionsTemplates,
-    'suggest': suggestionsTemplates,
-    'suggested': suggestionsTemplates,
-    'want': suggestionsTemplates,
-    'wanted': suggestionsTemplates,
-    'advise': suggestionsTemplates,
-    'advised': suggestionsTemplates,
 
     'good': adjectiveTemplates,
     'great': adjectiveTemplates,
@@ -106,5 +108,4 @@ totalDict = {
     'horrific': adjectiveTemplates,
     'bad': adjectiveTemplates,
 
-    'pizza': ['I love pizza. Let`s talk about it!']
 }
