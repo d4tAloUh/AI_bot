@@ -2,9 +2,9 @@ import os
 import telebot
 
 bot = telebot.TeleBot(os.getenv("TOKEN"))
+
 from bot.telegram import *
 from bot.Parser import *
-
 
 def run_parser():
     print("Parser is running")
@@ -17,7 +17,7 @@ def run_parser():
 
 def set_webhook():
     bot.set_webhook(url=f'{os.getenv("URL")}/bot{os.getenv("TOKEN")}')
-
+    print("webhook setted up")
 
 
 def run_telegram_bot():
