@@ -16,7 +16,12 @@ questionTemplate = [
     'Do you think I know everything?',
     'I`m not really sure about that',
     'I think it`s better to ask Google',
-    'What do you mean by that?'
+    'What do you mean by that?',
+    'That\'s a tough question 🧐',
+    'To be honest, you should ask this someone smarter than me 🤪',
+    'I am pretty dumb ass, and I don\'t know the answer :) ',
+    'You are just like Neznayka 😁',
+    'Use BING searcher for that 😋'
 ]
 
 suggestionsTemplates = [
