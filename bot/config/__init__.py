@@ -1,11 +1,6 @@
 pizzasTemplates = ['i love {} pizza', 'ooh yea, {}, the taste is so good', '{} is my favorite pizza', 'you say no more about that horrible pizza']
 
 missTemplates = ['I don\'t understand you. Try to talk about pizza...', 'What\'s the matter with it']
-# pizzas = {
-#     'bbb': {
-#         'template': pizzasTemplates
-#     }
-# }
 
 totalDict = {
     'margarita': pizzasTemplates,
@@ -24,4 +19,5 @@ totalDict = {
     'love': ['What else do you love?'],
     'prefer': ['Why\'s that'],
     'want': ['Have you tried BBQ pizza'],
+    'pizza': ['I love pizza']
 }
