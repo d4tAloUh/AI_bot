@@ -1,4 +1,4 @@
-pizzasTemplates = ['i love {} pizza', 'ooh yea, {}, the taste is so good', '']
+pizzasTemplates = ['i love {} pizza', 'ooh yea, {}, the taste is so good', '{} is my favorite pizza', 'you say no more about that horrible pizza']
 
 missTemplates = ['I don\'t understand you. Try to talk about pizza...', 'What\'s the matter with it']
 # pizzas = {
