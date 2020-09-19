@@ -45,7 +45,7 @@ missTemplates = [
 ]
 
 totalDict = {
-    'margherita': pizzasTemplates,
+    'margarita': pizzasTemplates,
     'chicago': pizzasTemplates,
     'greek': pizzasTemplates,
     'new-york': pizzasTemplates,
@@ -54,7 +54,7 @@ totalDict = {
     'carbonara': pizzasTemplates,
     'prosciutto': pizzasTemplates,
     'gorgonzola': pizzasTemplates,
-    'francescana': pizzasTemplates,
+    'francesca': pizzasTemplates,
     'mimosa': pizzasTemplates,
     'bbq': pizzasTemplates,
     'barbeque': pizzasTemplates,
