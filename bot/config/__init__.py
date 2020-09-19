@@ -5,8 +5,13 @@ pizzasTemplates = [
     'You say no more about that horrible pizza',
 ]
 
+changeThemeTemplates =[
+    'Have you ever thought about, why we enjoy eating?'
+]
+
 feelingsTemplates = [
     'What exactly do you {} about it?',
+    'What else do you {}'
     'Tell me more about it',
     'Oh, I know that feeling...',
     'I have the same feeling as you, believe me 🤥',
