@@ -87,6 +87,15 @@ missTemplates = [
 confidenceTemplates = [
     'Are you sure about that?',
     'Do you doubt that?',
+    'Why are you so sure about that? 🤨',
+    'Does it really matter?',
+    'I dont think so, but whatever. Tell me what\'s your favorite pizza? I would like to cook it 🍕',
+    'My mommy doesn\'t think so',
+    'Nice to hear it, but i would doubt that 😏' ,
+    'Ok boss!',
+    'Well i think that... Ok, whatever...',
+    'Doesn\'t matter for me 😉',
+    'Glad to hear that. (no)'
 ]
 
 totalDict = {
@@ -102,7 +111,7 @@ totalDict = {
     'francesca': pizzasTemplates,
     'mimosa': pizzasTemplates,
     'bbq': pizzasTemplates,
-    'barbeque': pizzasTemplates,
+    'barbecue': pizzasTemplates,
 
     'love': feelingsTemplates,
     'prefer': feelingsTemplates,
@@ -168,6 +177,9 @@ totalDict = {
     'might': confidenceTemplates,
     'perhaps': confidenceTemplates,
     'possible': confidenceTemplates,
-    'likely': confidenceTemplates
+    'likely': confidenceTemplates,
+    'no': confidenceTemplates,
+    'yes': confidenceTemplates,
+    'of course': confidenceTemplates,
 
 }
