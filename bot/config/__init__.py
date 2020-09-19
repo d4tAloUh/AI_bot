@@ -37,7 +37,9 @@ adjectiveTemplates = [
 
 greetingTemplates = [
     'Oh hi there!',
-    'Greetings!'
+    'Greetings!',
+    'It`s nice to see you!',
+
 ]
 
 missTemplates = [
@@ -118,4 +120,8 @@ totalDict = {
     "hello": greetingTemplates,
     "hi":greetingTemplates,
     "greetings":greetingTemplates,
+    "morning":greetingTemplates,
+    "afternoon":greetingTemplates,
+    "evening":greetingTemplates,
+    "howdy":greetingTemplates
 }

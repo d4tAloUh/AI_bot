@@ -1,13 +1,16 @@
 import os
 import telebot
+import random
 
 bot = telebot.TeleBot(os.getenv("TOKEN"))
 
 from bot.telegram import *
 from bot.Parser import *
+from .config import greetingTemplates
+
 
 def run_parser():
-    print("Parser is running")
+    print(random.choice(greetingTemplates))
     while True:
         text = input()
         print(parse_sentence(text))
