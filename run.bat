@@ -1,2 +1,2 @@
 @echo off
-python __init__.py
+python main.py
