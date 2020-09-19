@@ -18,7 +18,8 @@ def parse_sentence(sentence: str):
     for word in wordList:
         try:
             template = random.choice(totalDict[word])
-            return template.format(word.capitalize())
+            return template.format(word)
+            # return template.format(word.capitalize())
         except KeyError:
             continue
     return random.choice(missTemplates)
