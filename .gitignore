@@ -3,3 +3,4 @@ myvenv/
 __pycache__/
 environment/.env
 test.py
+*.iml
