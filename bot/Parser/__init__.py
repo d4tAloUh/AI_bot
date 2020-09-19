@@ -1,6 +1,6 @@
 import random
 import re
-from ..config import totalDict, questionTemplate, missTemplates
+from ..config import keyWords, totalDict, questionTemplate, missTemplates
 
 '''
 1. check if key exists in sentence -> " i dont understand you"
@@ -10,17 +10,31 @@ from ..config import totalDict, questionTemplate, missTemplates
 '''
 
 
+def sentence_transformation(wordList):
+    formatted = []
+    for i, word in enumerate(wordList):
+        if word in keyWords:
+            formatted.append(word)
+        elif len(formatted) > 0 and formatted[len(formatted) - 1] == "*":
+                continue
+        else:
+            formatted.append("*")
+    return ' '.join(formatted)
+
+
 def parse_sentence(sentence: str):
     sentence = sentence.replace('?', ' ?')
     # split the sentence into words
     wordList = sentence.lower().split(" ")
     if '?' in wordList:
         return random.choice(questionTemplate)
-    for word in wordList:
-        try:
-            template = random.choice(totalDict[word])
-            return template.format(word)
-            # return template.format(word.capitalize())
-        except KeyError:
-            continue
+    return random.choice(totalDict[sentence_transformation(wordList)])
+
+    # for word in wordList:
+    #     try:
+    #         template = random.choice(totalDict[word])
+    #         return template.format(word)
+    #         # return template.format(word.capitalize())
+    #     except KeyError:
+    #         continue
     return random.choice(missTemplates)

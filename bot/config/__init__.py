@@ -59,6 +59,24 @@ confidenceTemplates = [
     'Do you doubt that?',
 ]
 
+agreeTemplates = [
+    'Wow! Me too! Let`s talk about it!',
+    'Can`t agree more!',
+    'That`s great!'
+]
+
+keyWords = [
+    'i', 'love', 'prefer', 'like', 'enjoy', 'hate','dislike', 'pizza',
+    'recommend', 'recommended',  'suggest', 'suggested', 'want', 'wanted','advise', 'advised',
+    'is', 'are',  'do',  'does',  'why',
+    'what', 'where', 'when','how',  '?',
+    'good', 'great', 'amazing', 'awesome', 'best', 'favourite', 'delicious', 'breathtaking', 'tasty', 'mouth-watering',
+    'appetizing', 'flavoursome', 'delectable', 'disgusting', 'awful','terrible','tasteless', 'horrific','bad',
+    "hello", "hi","greetings", "morning", "afternoon","evening", "howdy",
+    "maybe", "definitely",  'certain',  'probably',  'might', 'perhaps',  'possible',  'likely'
+]
+
+
 totalDict = {
     'margarita': pizzasTemplates,
     'chicago': pizzasTemplates,
@@ -74,7 +92,8 @@ totalDict = {
     'bbq': pizzasTemplates,
     'barbeque': pizzasTemplates,
 
-    'love': feelingsTemplates,
+    '* love *': feelingsTemplates,
+    'i love *': agreeTemplates,
     'prefer': feelingsTemplates,
     'like': feelingsTemplates,
     'enjoy': feelingsTemplates,
