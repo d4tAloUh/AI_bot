@@ -35,6 +35,11 @@ adjectiveTemplates = [
     'We are of one mind! Btw, fun fact: the word pizza dates back to 997 CE.'
 ]
 
+greetingTemplates = [
+    'Oh hi there!',
+    'Greetings!'
+]
+
 missTemplates = [
     'I don\'t understand you',
     'What`s the matter with that',
@@ -110,4 +115,7 @@ totalDict = {
     'horrific': adjectiveTemplates,
     'bad': adjectiveTemplates,
 
+    "hello": greetingTemplates,
+    "hi":greetingTemplates,
+    "greetings":greetingTemplates,
 }

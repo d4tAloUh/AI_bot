@@ -1,6 +1,6 @@
 import random
 import re
-from ..config import totalDict, pizzasTemplates, missTemplates
+from ..config import totalDict, questionTemplate, missTemplates
 
 '''
 1. check if key exists in sentence -> " i dont understand you"
@@ -14,6 +14,8 @@ def parse_sentence(sentence: str):
     sentence = sentence.replace('?', ' ?')
     # split the sentence into words
     wordList = sentence.lower().split(" ")
+    if '?' in wordList:
+        return random.choice(questionTemplate)
     for word in wordList:
         try:
             template = random.choice(totalDict[word])

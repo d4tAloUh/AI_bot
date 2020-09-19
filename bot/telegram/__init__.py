@@ -1,8 +1,11 @@
 from .. import bot
 from ..Parser import parse_sentence
+from ..config import greetingTemplates
+import random
 
 @bot.message_handler(commands=['start', 'help'])
 def handle_start_help(message):
+    bot.send_message(message.chat.id, random.choice(greetingTemplates))
     print(message)
 
 
