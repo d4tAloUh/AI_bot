@@ -17,7 +17,7 @@ def run_parser():
 
 def set_webhook():
     bot.set_webhook(url=f'{os.getenv("URL")}/bot{os.getenv("TOKEN")}')
-    bot.polling()
+
 
 
 def run_telegram_bot():
