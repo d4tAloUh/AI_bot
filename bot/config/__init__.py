@@ -48,6 +48,18 @@ greetingTemplates = [
     'Oh hi there!',
     'Greetings!',
     'It`s nice to see you!',
+    'Again you? You should not be there',
+    'Do we know each other?',
+    'Do i know you?',
+    'Nice to meet you',
+    'Halo!',
+    'I missed you!',
+    'Oh, hy dear! You look much better than the last time I saw you 🙈',
+    'Wow, what a strange voice transformation you have, i havent heard you just for a little',
+    'Hi again, i hope next time we will not meet each other 😣',
+    'Hello beauty!',
+    'Hi pretty human being',
+    'Hello darling!'
 ]
 
 missTemplates = [
