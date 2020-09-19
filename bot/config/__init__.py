@@ -16,6 +16,8 @@ totalDict = {
     'mimosa': pizzasTemplates,
     'bbq': pizzasTemplates,
     'barbecue': pizzasTemplates,
+    'bad': ['Do you really think like this?'],
+    'hate': ['That\'s a shame'],
     'love': ['What else do you love?'],
     'prefer': ['Why\'s that'],
     'want': ['Have you tried BBQ pizza'],
