@@ -8,9 +8,10 @@ if __name__ == '__main__':
     print("Loaded env file")
     from bot import run_parser, run_telegram_bot, set_webhook
 
-
-    # run_parser()
-    if os.getenv("PLATFORM") == 'localhost':
-        run_telegram_bot()
-    elif os.getenv("PLATFORM") == 'heroku':
-        set_webhook()
+    try:
+        if os.getenv("PLATFORM") == 'localhost':
+            run_telegram_bot()
+        elif os.getenv("PLATFORM") == 'heroku':
+            set_webhook()
+    except:
+        run_parser()

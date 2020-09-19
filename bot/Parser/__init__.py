@@ -11,10 +11,7 @@ from ..config import totalDict, pizzasTemplates, missTemplates
 
 
 def parse_sentence(sentence: str):
-    # leave only words, remove every special character
-    # sentence = sentence.replace('?', ' ?')
-    # cleanSentence = re.sub('\W+|\?+', ' ', sentence)
-    # print(cleanSentence)
+    sentence = sentence.replace('?', ' ?')
     # split the sentence into words
     wordList = sentence.lower().split(" ")
     for word in wordList:
