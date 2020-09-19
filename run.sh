@@ -1,2 +1,2 @@
 #!/bin/sh
-python __init__.py
+python main.py

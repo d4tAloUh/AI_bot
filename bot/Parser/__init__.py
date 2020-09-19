@@ -1,5 +1,5 @@
 import random
-
+import re
 from ..config import totalDict, pizzasTemplates, missTemplates
 
 '''
@@ -11,11 +11,10 @@ from ..config import totalDict, pizzasTemplates, missTemplates
 
 
 def parse_sentence(sentence: str):
-    template = ''
-    sentence = sentence.lower().split(" ")
-    stopWords = []
-    sentence = [i for i in sentence if not i in stopWords]
-    for word in sentence:
+    sentence = sentence.replace('?', ' ?')
+    # split the sentence into words
+    wordList = sentence.lower().split(" ")
+    for word in wordList:
         try:
             template = random.choice(totalDict[word])
             return template.format(word)
