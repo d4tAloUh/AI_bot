@@ -36,12 +36,14 @@ adjectiveTemplates = [
 ]
 
 missTemplates = [
-    'I don\'t understand you. Try to talk about pizza...',
-    'Do you know that americans eat approximately 350 slices per second? Crazy, isn`t it?',
-    'Fun fact: 36% of all pizza orders want their pizza topped with pepperoni.',
-    'Btw, over 5 billion pizzas are sold worldwide each year.',
-    'Do you know that October has been celebrated as National Pizza month since 1987?',
-    'Fun fact: Women are more likely to order vegetarian options as opposed to men.'
+    'I don\'t understand you',
+    'What`s the matter with that',
+    "Try to specify the subject",
+    # 'Do you know that americans eat approximately 350 slices per second? Crazy, isn`t it?',
+    # 'Fun fact: 36% of all pizza orders want their pizza topped with pepperoni.',
+    # 'Btw, over 5 billion pizzas are sold worldwide each year.',
+    # 'Do you know that October has been celebrated as National Pizza month since 1987?',
+    # 'Fun fact: Women are more likely to order vegetarian options as opposed to men.'
 ]
 
 totalDict = {
