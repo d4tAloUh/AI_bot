@@ -8,7 +8,10 @@ pizzasTemplates = [
 feelingsTemplates = [
     'What exactly do you {} about it?',
     'Tell me more about it',
-    'Oh, I know that feeling...'
+    'Oh, I know that feeling...',
+    'I have the same feeling as you, believe me 🤥',
+    'You should speak about it to some of your friend, not me 🥴',
+    'I am not your personal psychologist, i will be only if you pay me some cash 💵'
 ]
 
 questionTemplate = [
@@ -16,7 +19,12 @@ questionTemplate = [
     'Do you think I know everything?',
     'I`m not really sure about that',
     'I think it`s better to ask Google',
-    'What do you mean by that?'
+    'What do you mean by that?',
+    'That\'s a tough question 🧐',
+    'To be honest, you should ask this someone smarter than me 🤪',
+    'I am pretty dumb ass, and I don\'t know the answer :) ',
+    'You are just like Neznayka 😁',
+    'Use BING searcher for that 😋'
 ]
 
 suggestionsTemplates = [
@@ -40,6 +48,18 @@ greetingTemplates = [
     'Oh hi there!',
     'Greetings!',
     'It`s nice to see you!',
+    'Again you? You should not be there',
+    'Do we know each other?',
+    'Do i know you?',
+    'Nice to meet you',
+    'Halo!',
+    'I missed you!',
+    'Oh, hy dear! You look much better than the last time I saw you 🙈',
+    'Wow, what a strange voice transformation you have, i havent heard you just for a little',
+    'Hi again, i hope next time we will not meet each other 😣',
+    'Hello beauty!',
+    'Hi pretty human being',
+    'Hello darling!'
 ]
 
 missTemplates = [
@@ -47,6 +67,16 @@ missTemplates = [
     'What`s the matter with that',
     "Try to specify the subject",
     "Does that really matter?",
+    'You sound strange, are you drunk? Say it again 😏',
+    'It is definitely not what you should tell me, I am not qualified enough to have any opinion on what you just said 🤫',
+    'Do you speak english good enough? Try it in other words',
+    'I’m probably not the best person to ask for that information😟',
+    'That requires a bit more research first. By the way, what\'s your favorite pizza?',
+    'I\'ll get back to you on that ✉️',
+    'I\'ll send you an email later on that',
+    'Tell me more about it 😈',
+    'I want to hear more about this',
+    'I\'ll call you later about that 📱'
     # 'Do you know that americans eat approximately 350 slices per second? Crazy, isn`t it?',
     # 'Fun fact: 36% of all pizza orders want their pizza topped with pepperoni.',
     # 'Btw, over 5 billion pizzas are sold worldwide each year.',
@@ -57,6 +87,15 @@ missTemplates = [
 confidenceTemplates = [
     'Are you sure about that?',
     'Do you doubt that?',
+    'Why are you so sure about that? 🤨',
+    'Does it really matter?',
+    'I dont think so, but whatever. Tell me what\'s your favorite pizza? I would like to cook it 🍕',
+    'My mommy doesn\'t think so',
+    'Nice to hear it, but i would doubt that 😏' ,
+    'Ok boss!',
+    'Well i think that... Ok, whatever...',
+    'Doesn\'t matter for me 😉',
+    'Glad to hear that. (no)'
 ]
 
 totalDict = {
@@ -72,7 +111,7 @@ totalDict = {
     'francesca': pizzasTemplates,
     'mimosa': pizzasTemplates,
     'bbq': pizzasTemplates,
-    'barbeque': pizzasTemplates,
+    'barbecue': pizzasTemplates,
 
     'love': feelingsTemplates,
     'prefer': feelingsTemplates,
@@ -138,6 +177,9 @@ totalDict = {
     'might': confidenceTemplates,
     'perhaps': confidenceTemplates,
     'possible': confidenceTemplates,
-    'likely': confidenceTemplates
+    'likely': confidenceTemplates,
+    'no': confidenceTemplates,
+    'yes': confidenceTemplates,
+    'of course': confidenceTemplates,
 
 }
