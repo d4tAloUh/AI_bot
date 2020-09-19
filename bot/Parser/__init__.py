@@ -12,7 +12,10 @@ from ..config import totalDict, pizzasTemplates, missTemplates
 
 def parse_sentence(sentence: str):
     template = ''
-    for word in sentence.lower().split(" "):
+    sentence = sentence.lower().split(" ")
+    stopWords = []
+    sentence = [i for i in sentence if not i in stopWords]
+    for word in sentence:
         try:
             template = random.choice(totalDict[word])
             return template.format(word.capitalize())
