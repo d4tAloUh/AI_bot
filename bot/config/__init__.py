@@ -33,12 +33,17 @@ questionTemplate = [
 ]
 
 suggestionsTemplates = [
-    'Have you tried BBQ pizza?',
-    'Have you tried Mimosa pizza?',
-    'Have you tried California pizza?',
-    'I think you might like Chicago pizza',
-    'Try any pizza with mushrooms. It`s considered to be the second best topping in the world!',
-    'What about topping with black olives?'
+    # 'Have you tried BBQ pizza?',
+    # 'Have you tried Mimosa pizza?',
+    # 'Have you tried California pizza?',
+    # 'I think you might like Chicago pizza',
+    # 'Try any pizza with mushrooms. It`s considered to be the second best topping in the world!',
+    # 'What about topping with black olives?'
+    'Dou you really need my opinion? I think you should know this much better 😊',
+    'Maybe you don\'t need it at all? Go and have a bottle of beer. 🍺',
+    'I am not a part of you, don\'t ask me for help, i am too busy for that 🙄.',
+    'Am i your personal adviser? I dont remember when you paid me last time 🤑',
+    'I don\'t think you can afford that 💸'
 ]
 
 adjectiveTemplates = [
