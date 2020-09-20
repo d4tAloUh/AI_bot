@@ -49,6 +49,14 @@ adjectiveTemplates = [
     'We are of one mind! Btw, fun fact: the word pizza dates back to 997 CE.'
 ]
 
+changeTopicTemplates = [
+    'What about the weather? Is it quite sunny today?',
+    'Btw, do you like running?',
+    'By the by, I want to try a new recipe today, do you have any suggestions? :)',
+    'Apart from that, your English sounds really professional! Where did you earn that skill?',
+    'Aside, i`m planning on watching a film tonight? Any recommendations?',
+]
+
 greetingTemplates = [
     'Oh hi there!',
     'Greetings!',
