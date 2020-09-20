@@ -8,7 +8,7 @@ if __name__ == '__main__':
     print("Loaded env file")
 
     from bot import *
-    try:
-        run_telegram_bot()
-    except:
-        run_parser()
+    # try:
+    #     run_telegram_bot()
+    # except:
+    run_parser()

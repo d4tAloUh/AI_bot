@@ -3,12 +3,6 @@ import re
 from ..config import totalDict, keyWords, questionTemplate, missTemplates, changeThemeTemplates, \
     adjectives, emotionVerbs, adverbsOfTime, futureAdverbs, pastAdverbs, questionWords
 
-'''
-1. check if key exists in sentence -> " i dont understand you"
-2. get type of key
-3. get collection of type
-4. get template string
-'''
 used: set = {""}
 usedSetChangeSubject: set = {""}
 
@@ -68,6 +62,7 @@ def parse_sentence(sentence: str):
 
     formattedComb = sentence_transformation(wordList)
     answer = check_combinations(formattedComb)
+
     if answer != '':
         return answer
 
@@ -81,6 +76,7 @@ def parse_sentence(sentence: str):
             continue
         #     this except means there is no unused templates
         except AttributeError:
+            used.clear()
             answer = random.choice([i if i not in used else None for i in changeThemeTemplates])
             usedSetChangeSubject.add(answer)
             if len(usedSetChangeSubject) == len(changeThemeTemplates):
