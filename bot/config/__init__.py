@@ -47,11 +47,20 @@ suggestionsTemplates = [
 ]
 
 adjectiveTemplates = [
-    'Mmm... couldn`t agree more. Is there any pizza you think is overrated?',
-    'That`s true! What do you think about pizzas with pineapple in it?',
-    'I also think that! Do you know that the best pizza in the world is considered to be Pepperoni?',
+    # 'Mmm... couldn`t agree more. Is there any pizza you think is overrated?',
+    # 'That`s true! What do you think about pizzas with pineapple in it?',
+    # 'I also think that! Do you know that the best pizza in the world is considered to be Pepperoni?',
+    # 'Absolutely disagree. Maybe our opinions will coincide on another thing.',
+    # 'We are of one mind! Btw, fun fact: the word pizza dates back to 997 CE.'
+    'Mmm... couldn`t agree more. ',
+    'That`s true! But i have friends that would not agree on that.',
+    'I also think that! But my family thinks that I am dumb, because i have these opinion.',
     'Absolutely disagree. Maybe our opinions will coincide on another thing.',
-    'We are of one mind! Btw, fun fact: the word pizza dates back to 997 CE.'
+    'We are of one mind!',
+    'I think you are not ordinary.',
+    'Why you have such opinion?',
+    'What made you think so?',
+    'That\'s a negative'
 ]
 
 greetingTemplates = [
