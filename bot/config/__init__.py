@@ -5,7 +5,7 @@ pizzasTemplates = [
     'You say no more about that horrible pizza',
 ]
 
-changeThemeTemplates =[
+changeThemeTemplates = [
     'Have you ever thought about, why we enjoy eating?'
 ]
 
@@ -49,6 +49,18 @@ adjectiveTemplates = [
     'We are of one mind! Btw, fun fact: the word pizza dates back to 997 CE.'
 ]
 
+changeTopicTemplates = [
+    'What about the weather? Is it quite sunny today?',
+    'Btw, do you like running?',
+    'By the by, I want to try a new recipe today, do you have any suggestions?',
+    'Apart from that, your English sounds really professional! Where did you earn that skill?',
+    'Aside, i`m planning on watching a film tonight? Any recommendations?',
+    'Btw, is there anything you particularly enjoy doing these days?',
+    'By the by, what are your plans for the weekends?',
+    'Apart from that, I really believe it would be better if you studied now rather than chatted with me...?',
+    'Aside, do you love travelling?',
+]
+
 greetingTemplates = [
     'Oh hi there!',
     'Greetings!',
@@ -64,7 +76,11 @@ greetingTemplates = [
     'Hi again, i hope next time we will not meet each other 😣',
     'Hello beauty!',
     'Hi pretty human being',
-    'Hello darling!'
+    'Hello darling!',
+    'Hi gorgeous!',
+    'Ciao!',
+    'You look stunning today!',
+    'Haven`t heard from you for a while.. How is it going?'
 ]
 
 missTemplates = [
@@ -73,7 +89,7 @@ missTemplates = [
     "Try to specify the subject",
     "Does that really matter?",
     'You sound strange, are you drunk? Say it again 😏',
-    'It is definitely not what you should tell me, I am not qualified enough to have any opinion on what you just said 🤫',
+    'I am not qualified enough to have any opinion on what you just said 🤫',
     'Do you speak english good enough? Try it in other words',
     'I’m probably not the best person to ask for that information😟',
     'That requires a bit more research first. By the way, what\'s your favorite pizza?',
@@ -82,11 +98,9 @@ missTemplates = [
     'Tell me more about it 😈',
     'I want to hear more about this',
     'I\'ll call you later about that 📱'
-    # 'Do you know that americans eat approximately 350 slices per second? Crazy, isn`t it?',
-    # 'Fun fact: 36% of all pizza orders want their pizza topped with pepperoni.',
-    # 'Btw, over 5 billion pizzas are sold worldwide each year.',
-    # 'Do you know that October has been celebrated as National Pizza month since 1987?',
-    # 'Fun fact: Women are more likely to order vegetarian options as opposed to men.'
+    'The weather is nice today, isn`t it?',
+    'Let`s talk about something else.. Tell me about your day',
+    'I think you can be more specific',
 ]
 
 confidenceTemplates = [
@@ -96,11 +110,49 @@ confidenceTemplates = [
     'Does it really matter?',
     'I dont think so, but whatever. Tell me what\'s your favorite pizza? I would like to cook it 🍕',
     'My mommy doesn\'t think so',
-    'Nice to hear it, but i would doubt that 😏' ,
+    'Nice to hear it, but i would doubt that 😏',
     'Ok boss!',
     'Well i think that... Ok, whatever...',
     'Doesn\'t matter for me 😉',
     'Glad to hear that. (no)'
+]
+
+agreeTemplates = [
+    'Wow! Me too! Let`s talk about it!',
+    'Can`t agree more!',
+    'That`s great!'
+]
+
+welcomeTemplates = [
+    'Your welcome! Let`s talk about something else! What`s your favourite meal?',
+    'No worries! Let`s talk about something else! Do you like pizza?',
+    'Let`s talk about something else! What`s the weather like today?',
+    'Let`s talk about something else! Cats or dogs?',
+    'Let`s talk about something else! Have you ever tried snowboarding?',
+    'Let`s talk about something else! Do you like dancing?',
+    'Let`s talk about something else! What plans do you have for tomorrow?',
+]
+
+# adverbs
+pastAdverbs = ['yesterday', 'a year ago', 'a while ago', 'last week', 'before', 'early', 'earlier']
+futureAdverbs = ['tomorrow', 'next year', 'later', 'tonight', 'next']
+adverbsOfTime = pastAdverbs + futureAdverbs + ['today', 'now']
+
+# verbs
+emotionVerbs = ['feel', 'love', 'prefer', 'like', 'enjoy', 'hate', 'dislike', ]
+verbs = emotionVerbs + ['recommend', 'suggest', 'want', 'want', 'advise', 'is', 'are', 'do', 'does']
+
+# adjectives
+adjectives = [
+    'good', 'great', 'amazing', 'awesome', 'best', 'favourite', 'delicious', 'breathtaking', 'tasty', 'mouth-watering',
+    'appetizing', 'flavoursome', 'delectable', 'disgusting', 'awful', 'terrible', 'tasteless', 'horrific', 'bad'
+]
+
+keyWords = verbs + adjectives + adverbsOfTime + [
+    'pizza', 'i', 'you', 'why', 'what', 'where', 'when', 'how', '?', 'yes', 'no',
+    "hello", "hi", "greetings", "morning", "afternoon", "evening", "howdy",
+    "maybe", "definitely", 'certain', 'probably', 'might', 'perhaps', 'possible', 'likely',
+    'thank', 'thanks'
 ]
 
 totalDict = {
@@ -118,7 +170,11 @@ totalDict = {
     'bbq': pizzasTemplates,
     'barbecue': pizzasTemplates,
 
-    'love': feelingsTemplates,
+    'i feel *': ['Why do you feel that way?'],
+    'i * feel *': ['Why do you feel that way?'],
+
+    '* love *': feelingsTemplates,
+    'i love *': agreeTemplates,
     'prefer': feelingsTemplates,
     'like': feelingsTemplates,
     'enjoy': feelingsTemplates,
@@ -135,17 +191,30 @@ totalDict = {
     'wanted': suggestionsTemplates,
     'advise': suggestionsTemplates,
     'advised': suggestionsTemplates,
+    'how about': suggestionsTemplates,
+    'what about':suggestionsTemplates,
 
-    'is': questionTemplate,
-    'are': questionTemplate,
-    'do': questionTemplate,
-    'does': questionTemplate,
-    'why': questionTemplate,
-    'what': questionTemplate,
-    'where': questionTemplate,
-    'when': questionTemplate,
-    'how': questionTemplate,
+    'is * ?': questionTemplate,
+    'are * ?': questionTemplate,
+    'do * ?': questionTemplate,
+    'does * ?': questionTemplate,
+    'why * ?': questionTemplate,
+    'what * ?': questionTemplate,
+    'where * ?': questionTemplate,
+    'when * ?': questionTemplate,
+    'how * ?': questionTemplate,
     '?': questionTemplate,
+
+    '* is * ?': questionTemplate,
+    '* are * ?': questionTemplate,
+    '* do * ?': questionTemplate,
+    '* does * ?': questionTemplate,
+    '* why * ?': questionTemplate,
+    '* what * ?': questionTemplate,
+    '* where * ?': questionTemplate,
+    '* when * ?': questionTemplate,
+    '* how * ?': questionTemplate,
+    '* ?': questionTemplate,
 
     'good': adjectiveTemplates,
     'great': adjectiveTemplates,
@@ -186,5 +255,18 @@ totalDict = {
     'no': confidenceTemplates,
     'yes': confidenceTemplates,
     'of course': confidenceTemplates,
+    'for sure': confidenceTemplates,
+    'no doubt': confidenceTemplates,
+    '* doubt *': confidenceTemplates,
+    'i doubt *': confidenceTemplates,
+    'i doubt that': confidenceTemplates,
+    'not sure': confidenceTemplates,
+    'true': confidenceTemplates,
+    'that`s true': confidenceTemplates,
+    'thats true': confidenceTemplates,
 
+    'thank you': welcomeTemplates,
+    'thanks': welcomeTemplates,
+
+    'how are you': ['Fine, thanks for asking. Let`s talk about something else! What`s the weather like today?'],
 }
