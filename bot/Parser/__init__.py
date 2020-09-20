@@ -24,6 +24,15 @@ def check_combinations(formattedComb: str):
         if formattedComb.find(questionWord) != -1:
             return random.choice(questionTemplate)
 
+    for adjective in adjectives:
+        if (formattedComb.find('i feel ' + adjective) != -1) \
+                or (formattedComb.find('i am ' + adjective) != -1):
+            return 'Why do you feel ' + adjective + '?'
+        elif (formattedComb.find('is ' + adjective) != -1) \
+                or (formattedComb.find('are  ' + adjective) != -1) \
+                or (formattedComb.find('be  ' + adjective) != -1):
+            return 'Why do you think that`s' + adjective + '?'
+
     for verb in emotionVerbs:
         if formattedComb.find('i ' + verb) != -1:
             return 'What else do you ' + verb + '?'
@@ -35,14 +44,6 @@ def check_combinations(formattedComb: str):
             return 'What else happened ' + adverbOfTime + '?'
         elif (formattedComb.find(adverbOfTime) != -1) and (adverbOfTime == 'today'):
             return 'What else happened today?'
-
-    for adjective in adjectives:
-        if formattedComb.find('i feel ' + adjective) != -1:
-            return 'Why do you feel ' + adjective + '?'
-        elif (formattedComb.find('is ' + adjective) != -1) \
-                or (formattedComb.find('are  ' + adjective) != -1) \
-                or (formattedComb.find('be  ' + adjective) != -1):
-            return 'Why do you think that`s' + adjective + '?'
 
     if formattedComb in totalDict:
         return random.choice(totalDict[formattedComb])
