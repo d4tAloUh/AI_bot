@@ -20,22 +20,34 @@ def sentence_transformation(wordList):
 
 
 def check_combinations(formattedComb: str):
-    for questionWord in questionWords:
-        if formattedComb.find(questionWord) != -1:
-            return random.choice(questionTemplate)
+    '''
+    Ненужная проверка, которая словится в следующем цикле (обычного алгоритма)
+    '''
+    # for questionWord in questionWords:
+    #     if formattedComb.find(questionWord) != -1:
+    #         return random.choice(questionTemplate)
+    '''
+    Словится дальше
+    '''
 
+    # for adjective in adjectives:
+    #     if (formattedComb.find('i feel ' + adjective) != -1) \
+    #             or (formattedComb.find('i am ' + adjective) != -1):
+    #         return f'Why do you feel {adjective}?'
+    #     elif (formattedComb.find('is ' + adjective) != -1) \
+    #             or (formattedComb.find('are  ' + adjective) != -1) \
+    #             or (formattedComb.find('be  ' + adjective) != -1):
+    #         return 'Why do you think that`s' + adjective + '?'
     for adjective in adjectives:
         if (formattedComb.find('i feel ' + adjective) != -1) \
                 or (formattedComb.find('i am ' + adjective) != -1):
-            return 'Why do you feel ' + adjective + '?'
-        elif (formattedComb.find('is ' + adjective) != -1) \
-                or (formattedComb.find('are  ' + adjective) != -1) \
-                or (formattedComb.find('be  ' + adjective) != -1):
-            return 'Why do you think that`s' + adjective + '?'
-
-    for verb in emotionVerbs:
-        if formattedComb.find('i ' + verb) != -1:
-            return 'What else do you ' + verb + '?'
+            return f'Why do you feel {adjective}?'
+    '''
+    Словится дальше
+    '''
+    # for verb in emotionVerbs:
+    #     if formattedComb.find('i ' + verb) != -1:
+    #         return 'What else do you ' + verb + '?'
 
     for adverbOfTime in adverbsOfTime:
         if (formattedComb.find(adverbOfTime) != -1) and (adverbOfTime in futureAdverbs):
@@ -46,7 +58,7 @@ def check_combinations(formattedComb: str):
             return 'What else happened today?'
 
     if formattedComb in totalDict:
-        return random.choice(totalDict[formattedComb])
+        return random.choice([i if i not in used else None for i in totalDict[formattedComb]])
 
     return ''
 
@@ -64,6 +76,7 @@ def parse_sentence(sentence: str):
     answer = check_combinations(formattedComb)
 
     if answer != '':
+        used.add(answer)
         return answer
 
     # otherwise returns related template
