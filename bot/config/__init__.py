@@ -169,11 +169,13 @@ adjectives = [
     'appetizing', 'flavoursome', 'delectable', 'disgusting', 'awful', 'terrible', 'tasteless', 'horrific', 'bad'
 ]
 
-keyWords = verbs + adjectives + adverbsOfTime + [
-    'pizza', 'i', 'you', 'why', 'what', 'where', 'when', 'how', '?', 'yes', 'no',
+questionWords = ['why', 'what', 'where', 'when', 'how',
+                 'is', 'are', 'do','does', '?']
+
+keyWords = verbs + adjectives + adverbsOfTime + questionWords + [
+    'pizza', 'i', 'you', 'yes', 'no', 'thank', 'thanks',
     "hello", "hi", "greetings", "morning", "afternoon", "evening", "howdy",
     "maybe", "definitely", 'certain', 'probably', 'might', 'perhaps', 'possible', 'likely',
-    'thank', 'thanks'
 ]
 
 totalDict = {
@@ -224,6 +226,17 @@ totalDict = {
     'where * ?': questionTemplate,
     'when * ?': questionTemplate,
     'how * ?': questionTemplate,
+    '?': questionTemplate,
+
+    'is': questionTemplate,
+    'are': questionTemplate,
+    'do': questionTemplate,
+    'does': questionTemplate,
+    'why': questionTemplate,
+    'what': questionTemplate,
+    'where': questionTemplate,
+    'when': questionTemplate,
+    'how': questionTemplate,
     '?': questionTemplate,
 
     '* is * ?': questionTemplate,

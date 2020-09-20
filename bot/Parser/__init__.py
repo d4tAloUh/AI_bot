@@ -1,7 +1,7 @@
 import random
 import re
 from ..config import totalDict, keyWords, questionTemplate, missTemplates, changeThemeTemplates, \
-    verbs, adjectives, emotionVerbs, adverbsOfTime, futureAdverbs, pastAdverbs
+    adjectives, emotionVerbs, adverbsOfTime, futureAdverbs, pastAdverbs, questionWords
 
 '''
 1. check if key exists in sentence -> " i dont understand you"
@@ -26,6 +26,10 @@ def sentence_transformation(wordList):
 
 
 def check_combinations(formattedComb: str):
+    for questionWord in questionWords:
+        if formattedComb.find(questionWord) != -1:
+            return random.choice(questionTemplate)
+
     for verb in emotionVerbs:
         if formattedComb.find('i ' + verb) != -1:
             return 'What else do you ' + verb + '?'
