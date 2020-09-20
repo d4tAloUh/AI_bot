@@ -25,7 +25,7 @@ def sentence_transformation(wordList):
     return ' '.join(formatted)
 
 
-def checkCombinations(formattedComb: str):
+def check_combinations(formattedComb: str):
     for verb in emotionVerbs:
         if formattedComb.find('i ' + verb) != -1:
             return 'What else do you ' + verb + '?'
@@ -46,6 +46,9 @@ def checkCombinations(formattedComb: str):
                 or (formattedComb.find('be  ' + adjective) != -1):
             return 'Why do you think that`s' + adjective + '?'
 
+    if formattedComb in totalDict:
+        return random.choice(totalDict[formattedComb])
+
     return ''
 
 
@@ -59,34 +62,24 @@ def parse_sentence(sentence: str):
         return random.choice(questionTemplate)
 
     formattedComb = sentence_transformation(wordList)
-    answer = checkCombinations(formattedComb)
+    answer = check_combinations(formattedComb)
     if answer != '':
         return answer
 
-    # checks whether there is a given combination in dictionary
-    # -> if not returns one of  missing templates
-    if not (formattedComb in totalDict):
-         return random.choice(missTemplates)
-
     # otherwise returns related template
-    template = random.choice([i if i not in used else None for i in totalDict[formattedComb]])
-    used.add(template.format(formattedComb))
-    return template
+    for word in wordList:
+        try:
+            template = random.choice([i if i not in used else None for i in totalDict[word]])
+            used.add(template.format(word))
+            return template.format(word)
+        except KeyError:
+            continue
+        #     this except means there is no unused templates
+        except AttributeError:
+            answer = random.choice([i if i not in used else None for i in changeThemeTemplates])
+            usedSetChangeSubject.add(answer)
+            if len(usedSetChangeSubject) == len(changeThemeTemplates):
+                usedSetChangeSubject.clear()
+            return answer
 
-
-#     for word in wordList:
-#         try:
-#             template = random.choice([i if i not in used else None for i in totalDict[word]])
-#             used.add(template.format(word))
-#             return template.format(word)
-#         except KeyError:
-#             continue
-#         #     this except means there is no unused templates
-#         except AttributeError:
-#             answer = random.choice([i if i not in used else None for i in changeThemeTemplates])
-#             usedSetChangeSubject.add(answer)
-#             if len(usedSetChangeSubject) == len(changeThemeTemplates):
-#                 usedSetChangeSubject.clear()
-#             return answer
-#
-#     return random.choice(missTemplates)
+    return random.choice(missTemplates)

@@ -52,9 +52,13 @@ adjectiveTemplates = [
 changeTopicTemplates = [
     'What about the weather? Is it quite sunny today?',
     'Btw, do you like running?',
-    'By the by, I want to try a new recipe today, do you have any suggestions? :)',
+    'By the by, I want to try a new recipe today, do you have any suggestions?',
     'Apart from that, your English sounds really professional! Where did you earn that skill?',
     'Aside, i`m planning on watching a film tonight? Any recommendations?',
+    'Btw, is there anything you particularly enjoy doing these days?',
+    'By the by, what are your plans for the weekends?',
+    'Apart from that, I really believe it would be better if you studied now rather than chatted with me...?',
+    'Aside, do you love travelling?',
 ]
 
 greetingTemplates = [
@@ -72,7 +76,11 @@ greetingTemplates = [
     'Hi again, i hope next time we will not meet each other 😣',
     'Hello beauty!',
     'Hi pretty human being',
-    'Hello darling!'
+    'Hello darling!',
+    'Hi gorgeous!',
+    'Ciao!',
+    'You look stunning today!',
+    'Haven`t heard from you for a while.. How is it going?'
 ]
 
 missTemplates = [
@@ -81,7 +89,7 @@ missTemplates = [
     "Try to specify the subject",
     "Does that really matter?",
     'You sound strange, are you drunk? Say it again 😏',
-    'It is definitely not what you should tell me, I am not qualified enough to have any opinion on what you just said 🤫',
+    'I am not qualified enough to have any opinion on what you just said 🤫',
     'Do you speak english good enough? Try it in other words',
     'I’m probably not the best person to ask for that information😟',
     'That requires a bit more research first. By the way, what\'s your favorite pizza?',
@@ -91,7 +99,8 @@ missTemplates = [
     'I want to hear more about this',
     'I\'ll call you later about that 📱'
     'The weather is nice today, isn`t it?',
-    'Let`s talk about something else.. Tell me about your day'
+    'Let`s talk about something else.. Tell me about your day',
+    'I think you can be more specific',
 ]
 
 confidenceTemplates = [
