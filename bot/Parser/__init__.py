@@ -76,6 +76,7 @@ def parse_sentence(sentence: str):
             continue
         #     this except means there is no unused templates
         except AttributeError:
+            used.clear()
             answer = random.choice([i if i not in used else None for i in changeThemeTemplates])
             usedSetChangeSubject.add(answer)
             if len(usedSetChangeSubject) == len(changeThemeTemplates):

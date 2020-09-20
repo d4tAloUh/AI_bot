@@ -6,24 +6,24 @@ pizzasTemplates = [
 ]
 
 changeThemeTemplates = [
-    'Have you ever thought about, why we enjoy eating?',
+    # 'Have you ever thought about, why we enjoy eating?',
     'Whatever. By the way, do you like pizza? Which one is your favourite?',
-    'I think you have something on your face. I almost forgot to ask you whether you have any dog? Cause i want one but can not decide on breed 🐶',
+    # 'I think you have something on your face. I almost forgot to ask you whether you have any dog? Cause i want one but can not decide on breed 🐶',
     'Please, let\'s change topic of our conversation. Maybe lets talk about pizza? Margarita is my favourite :)',
     'I dont want to talk about that. How is your family doing?',
-    'I hate talking about that. Tell me about your programming skills more 🧑‍💻👩‍💻',
+    # 'I hate talking about that. Tell me about your programming skills more 🧑‍💻👩‍💻',
     'Please, let\'s change the direction of our conversation. Tell me about your best friend.',
     'Dont want to talk about that for now, tell me about how is your job doing?',
-    'Thats a taboo topic. You should better tell me more about your relationships 💞.',
-    'This is off-limits. Do you think Trump is going to become a president for the second time and why?',
+    # 'Thats a taboo topic. You should better tell me more about your relationships 💞.',
+    # 'This is off-limits. Do you think Trump is going to become a president for the second time and why?',
     'What about the weather? Is it quite sunny today?',
     'Btw, do you like running?',
     'By the by, I want to try a new recipe today, do you have any suggestions?',
-    'Apart from that, your English sounds really professional! Where did you earn that skill?',
+    # 'Apart from that, your English sounds really professional! Where did you earn that skill?',
     'Aside, i`m planning on watching a film tonight? Any recommendations?',
     'Btw, is there anything you particularly enjoy doing these days?',
-    'By the by, what are your plans for the weekends?',
-    'Apart from that, I really believe it would be better if you studied now rather than chatted with me...?',
+    # 'By the by, what are your plans for the weekends?',
+    # 'Apart from that, I really believe it would be better if you studied now rather than chatted with me...?',
     'Aside, do you love travelling?'
 ]
 
@@ -31,22 +31,22 @@ feelingsTemplates = [
     'What exactly do you {} about it?',
     'What else do you {}'
     'Tell me more about it',
-    'Oh, I know that feeling...',
-    'I have the same feeling as you, believe me 🤥',
-    'You should speak about it to some of your friend, not me 🥴',
-    'I am not your personal psychologist, i will be only if you pay me some cash 💵'
+    # 'Oh, I know that feeling...',
+    # 'I have the same feeling as you, believe me 🤥',
+    # 'You should speak about it to some of your friend, not me 🥴',
+    # 'I am not your personal psychologist, i will be only if you pay me some cash 💵'
 ]
 
 questionTemplate = [
     'Why are you asking?',
-    'Do you think I know everything?',
+    # 'Do you think I know everything?',
     'I`m not really sure about that',
     'I think it`s better to ask Google',
     'What do you mean by that?',
-    'That\'s a tough question 🧐',
-    'To be honest, you should ask this someone smarter than me 🤪',
-    'I am pretty dumb ass, and I don\'t know the answer :) ',
-    'You are just like Neznayka 😁',
+    # 'That\'s a tough question 🧐',
+    # 'To be honest, you should ask this someone smarter than me 🤪',
+    # 'I am pretty dumb ass, and I don\'t know the answer :) ',
+    # 'You are just like Neznayka 😁',
     'Use BING searcher for that 😋'
 ]
 
@@ -88,28 +88,28 @@ missTemplates = [
     'What`s the matter with that',
     "Try to specify the subject",
     "Does that really matter?",
-    'I am not qualified enough to have any opinion on what you just said 🤫',
+    # 'I am not qualified enough to have any opinion on what you just said 🤫',
     'That requires a bit more research first. By the way, what\'s your favorite pizza?',
     'Tell me more about it 😈',
-    'I want to hear more about this',
+    # 'I want to hear more about this',
     'The weather is nice today, isn`t it?',
     'Let`s talk about something else..',
     'I think you can be more specific',
 ]
 
 confidenceTemplates = [
-    'Why are you {}'
+    # 'Why are you {}'
     'Are you sure about that?',
     'Do you doubt that?',
-    'Why are you so sure about that? 🤨',
+    # 'Why are you so sure about that? 🤨',
     'Does it really matter?',
-    'I dont think so, but whatever. Tell me what\'s your favorite pizza? I would like to cook it 🍕',
-    'My mommy doesn\'t think so',
-    'Nice to hear it, but i would doubt that 😏',
-    'Ok boss!',
-    'Well i think that... Ok, whatever...',
-    'Doesn\'t matter for me 😉',
-    'Glad to hear that. (no)'
+    'I dont think so, but whatever. Tell me what\'s your favorite pizza?',
+    # 'My mommy doesn\'t think so',
+    # 'Nice to hear it, but i would doubt that 😏',
+    # 'Ok boss!',
+    # 'Well i think that... Ok, whatever...',
+    # 'Doesn\'t matter for me 😉',
+    # 'Glad to hear that. (no)'
 ]
 
 agreeTemplates = [
@@ -150,11 +150,13 @@ totalDict = {
     'wanted': suggestionsTemplates,
     'advise': suggestionsTemplates,
     'advised': suggestionsTemplates,
+
     'how about': suggestionsTemplates,
     'what about': suggestionsTemplates,
 
     '* love *': feelingsTemplates,
     'i love *': agreeTemplates,
+
     'prefer': feelingsTemplates,
     'like': feelingsTemplates,
     'enjoy': feelingsTemplates,
