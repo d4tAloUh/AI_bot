@@ -5,8 +5,7 @@ pizzasTemplates = [
     'You say no more about that horrible pizza',
 ]
 
-
-changeThemeTemplates =[
+changeThemeTemplates = [
     'Have you ever thought about, why we enjoy eating?',
     'Whatever. By the way, do you like pizza? Which one is your favourite?',
     'I think you have something on your face. I almost forgot to ask you whether you have any dog? Cause i want one but can not decide on breed 🐶',
@@ -166,11 +165,12 @@ verbs = emotionVerbs + ['recommend', 'suggest', 'want', 'want', 'advise', 'is', 
 # adjectives
 adjectives = [
     'good', 'great', 'amazing', 'awesome', 'best', 'favourite', 'delicious', 'breathtaking', 'tasty', 'mouth-watering',
-    'appetizing', 'flavoursome', 'delectable', 'disgusting', 'awful', 'terrible', 'tasteless', 'horrific', 'bad'
+    'appetizing', 'flavoursome', 'delectable', 'disgusting', 'awful', 'terrible', 'tasteless', 'horrific', 'bad', 'sad',
+    'disappointed'
 ]
 
 questionWords = ['why', 'what', 'where', 'when', 'how',
-                 'is', 'are', 'do','does', '?']
+                 'is', 'are', 'do', 'does', '?']
 
 keyWords = verbs + adjectives + adverbsOfTime + questionWords + [
     'pizza', 'i', 'you', 'yes', 'no', 'thank', 'thanks',
@@ -193,9 +193,6 @@ totalDict = {
     'bbq': pizzasTemplates,
     'barbecue': pizzasTemplates,
 
-    'i feel *': ['Why do you feel that way?'],
-    'i * feel *': ['Why do you feel that way?'],
-
     '* love *': feelingsTemplates,
     'i love *': agreeTemplates,
     'prefer': feelingsTemplates,
@@ -215,7 +212,7 @@ totalDict = {
     'advise': suggestionsTemplates,
     'advised': suggestionsTemplates,
     'how about': suggestionsTemplates,
-    'what about':suggestionsTemplates,
+    'what about': suggestionsTemplates,
 
     'is * ?': questionTemplate,
     'are * ?': questionTemplate,
