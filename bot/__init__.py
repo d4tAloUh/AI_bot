@@ -1,6 +1,5 @@
 import os
 import telebot
-import random
 
 bot = telebot.TeleBot(os.getenv("TOKEN"))
 
@@ -10,7 +9,9 @@ from .config import greetingTemplates
 
 
 def run_parser():
+    print("TYPE c TO LEAVE")
     print(random.choice(greetingTemplates))
+
     while True:
         text = input()
         print(parse_sentence(text))
@@ -18,13 +19,6 @@ def run_parser():
             break
 
 
-def set_webhook():
-    bot.set_webhook(url=f'{os.getenv("URL")}/bot{os.getenv("TOKEN")}')
-    print("webhook setted up")
-
-
 def run_telegram_bot():
-    bot.remove_webhook()
-    print("Removed webhook")
     print("Bot started polling")
     bot.polling()

@@ -61,9 +61,8 @@ def parse_sentence(sentence: str):
         return random.choice(questionTemplate)
 
     formattedComb = sentence_transformation(wordList)
-    print(formattedComb)
     answer = check_combinations(formattedComb)
-    print(answer)
+
     if answer != '':
         return answer
 

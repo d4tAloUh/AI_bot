@@ -51,12 +51,6 @@ questionTemplate = [
 ]
 
 suggestionsTemplates = [
-    # 'Have you tried BBQ pizza?',
-    # 'Have you tried Mimosa pizza?',
-    # 'Have you tried California pizza?',
-    # 'I think you might like Chicago pizza',
-    # 'Try any pizza with mushrooms. It`s considered to be the second best topping in the world!',
-    # 'What about topping with black olives?'
     'Dou you really need my opinion? I think you should know this much better 😊',
     'Maybe you don\'t need it at all? Go and have a bottle of beer. 🍺',
     'I am not a part of you, don\'t ask me for help, i am too busy for that 🙄.',
@@ -65,40 +59,26 @@ suggestionsTemplates = [
 ]
 
 adjectiveTemplates = [
-    # 'Mmm... couldn`t agree more. Is there any pizza you think is overrated?',
-    # 'That`s true! What do you think about pizzas with pineapple in it?',
-    # 'I also think that! Do you know that the best pizza in the world is considered to be Pepperoni?',
+    'Why is it {} ?'
+    'Mmm... couldn`t agree more. Is it really {} ?',
+    # 'That`s true! But i have friends that would not agree on that.',
+    # 'I also think that! But my family thinks that I am dumb, because i have these opinion.',
     # 'Absolutely disagree. Maybe our opinions will coincide on another thing.',
-    # 'We are of one mind! Btw, fun fact: the word pizza dates back to 997 CE.'
-    'Mmm... couldn`t agree more. ',
-    'That`s true! But i have friends that would not agree on that.',
-    'I also think that! But my family thinks that I am dumb, because i have these opinion.',
-    'Absolutely disagree. Maybe our opinions will coincide on another thing.',
-    'We are of one mind!',
-    'I think you are not ordinary.',
-    'Why you have such opinion?',
+    # 'We are of one mind!',
+    # 'I think you are not ordinary.',
+    'Why you have such opinion ?',
     'What made you think so?',
-    'That\'s a negative'
+    # 'That\'s a negative'
 ]
 
 greetingTemplates = [
-    'Oh hi there!',
-    'Greetings!',
-    'It`s nice to see you!',
-    'Again you? You should not be there',
+    'Oh hi there! How do you feel today?',
+    'Greetings! How are you?',
     'Do we know each other?',
-    'Do i know you?',
-    'Nice to meet you',
-    'Halo!',
-    'I missed you!',
     'Oh, hy dear! You look much better than the last time I saw you 🙈',
-    'Wow, what a strange voice transformation you have, i havent heard you just for a little',
-    'Hi again, i hope next time we will not meet each other 😣',
-    'Hello beauty!',
-    'Hi pretty human being',
-    'Hello darling!',
-    'Hi gorgeous!',
-    'Ciao!',
+    'Hello beauty! How are you?',
+    'Hi pretty human being! How do you feel today?',
+    'Hello darling! How do you feel today?',
     'You look stunning today!',
     'Haven`t heard from you for a while.. How is it going?'
 ]
@@ -108,23 +88,17 @@ missTemplates = [
     'What`s the matter with that',
     "Try to specify the subject",
     "Does that really matter?",
-    'You sound strange, are you drunk? Say it again 😏',
     'I am not qualified enough to have any opinion on what you just said 🤫',
-    'Do you speak english good enough? Try it in other words',
-    'I’m probably not the best person to ask for that information😟',
     'That requires a bit more research first. By the way, what\'s your favorite pizza?',
-    'I\'ll get back to you on that ✉️',
-    'I\'ll send you an email later on that',
     'Tell me more about it 😈',
     'I want to hear more about this',
-    'I\'ll call you later about that 📱'
     'The weather is nice today, isn`t it?',
-    'Let`s talk about something else.. Tell me about your day',
+    'Let`s talk about something else..',
     'I think you can be more specific',
 ]
 
 confidenceTemplates = [
-    'why are you {}'
+    'Why are you {}'
     'Are you sure about that?',
     'Do you doubt that?',
     'Why are you so sure about that? 🤨',
@@ -145,36 +119,10 @@ agreeTemplates = [
 ]
 
 welcomeTemplates = [
-    'Your welcome! Let`s talk about something else! What`s your favourite meal?',
     'No worries! Let`s talk about something else! Do you like pizza?',
-    'Let`s talk about something else! What do you like?',
+    'Your welcome! Let`s talk about something else! What do you like?',
     'Let`s talk about something else! Do you like dancing?',
-    'Let`s talk about something else! What plans do you have for tomorrow?',
-]
-
-# adverbs
-pastAdverbs = ['yesterday', 'a year ago', 'a while ago', 'last week', 'before', 'early', 'earlier']
-futureAdverbs = ['tomorrow', 'next year', 'later', 'tonight', 'next']
-adverbsOfTime = pastAdverbs + futureAdverbs + ['today', 'now']
-
-# verbs
-emotionVerbs = ['feel', 'love', 'prefer', 'like', 'enjoy', 'hate', 'dislike', ]
-verbs = emotionVerbs + ['recommend', 'suggest', 'want', 'want', 'advise', 'is', 'are', 'do', 'does']
-
-# adjectives
-adjectives = [
-    'good', 'great', 'amazing', 'awesome', 'best', 'favourite', 'delicious', 'breathtaking', 'tasty', 'mouth-watering',
-    'appetizing', 'flavoursome', 'delectable', 'disgusting', 'awful', 'terrible', 'tasteless', 'horrific', 'bad', 'sad',
-    'disappointed'
-]
-
-questionWords = ['why', 'what', 'where', 'when', 'how',
-                 'is', 'are', 'do', 'does', '?']
-
-keyWords = verbs + adjectives + adverbsOfTime + questionWords + [
-    'pizza', 'i', 'you', 'yes', 'no', 'thank', 'thanks',
-    "hello", "hi", "greetings", "morning", "afternoon", "evening", "howdy",
-    "maybe", "definitely", 'certain', 'probably', 'might', 'perhaps', 'possible', 'likely',
+    'Let`s talk about something else! Is there something you hate?',
 ]
 
 totalDict = {
@@ -192,14 +140,6 @@ totalDict = {
     'bbq': pizzasTemplates,
     'barbecue': pizzasTemplates,
 
-    '* love *': feelingsTemplates,
-    'i love *': agreeTemplates,
-    'prefer': feelingsTemplates,
-    'like': feelingsTemplates,
-    'enjoy': feelingsTemplates,
-    'hate': feelingsTemplates,
-    'dislike': feelingsTemplates,
-
     'pizza': ['I love pizza. Let`s talk about it!'],
 
     'recommend': suggestionsTemplates,
@@ -213,6 +153,14 @@ totalDict = {
     'how about': suggestionsTemplates,
     'what about': suggestionsTemplates,
 
+    '* love *': feelingsTemplates,
+    'i love *': agreeTemplates,
+    'prefer': feelingsTemplates,
+    'like': feelingsTemplates,
+    'enjoy': feelingsTemplates,
+    'hate': feelingsTemplates,
+    'dislike': feelingsTemplates,
+
     'is * ?': questionTemplate,
     'are * ?': questionTemplate,
     'do * ?': questionTemplate,
@@ -224,16 +172,6 @@ totalDict = {
     'how * ?': questionTemplate,
     '?': questionTemplate,
 
-    'is': questionTemplate,
-    'are': questionTemplate,
-    'do': questionTemplate,
-    'does': questionTemplate,
-    'why': questionTemplate,
-    'what': questionTemplate,
-    'where': questionTemplate,
-    'when': questionTemplate,
-    'how': questionTemplate,
-
     '* is * ?': questionTemplate,
     '* are * ?': questionTemplate,
     '* do * ?': questionTemplate,
@@ -244,6 +182,16 @@ totalDict = {
     '* when * ?': questionTemplate,
     '* how * ?': questionTemplate,
     '* ?': questionTemplate,
+
+    'is': questionTemplate,
+    'are': questionTemplate,
+    'do': questionTemplate,
+    'does': questionTemplate,
+    'why': questionTemplate,
+    'what': questionTemplate,
+    'where': questionTemplate,
+    'when': questionTemplate,
+    'how': questionTemplate,
 
     'good': adjectiveTemplates,
     'great': adjectiveTemplates,
@@ -301,3 +249,28 @@ totalDict = {
 
     'how are you': ['Fine, thanks for asking. Let`s talk about something else! What`s the weather like today?'],
 }
+
+# adverbs
+pastAdverbs = ['yesterday', 'a year ago', 'a while ago', 'last week', 'before', 'early', 'earlier']
+futureAdverbs = ['tomorrow', 'next year', 'later', 'tonight', 'next']
+adverbsOfTime = pastAdverbs + futureAdverbs + ['today', 'now']
+
+# verbs
+emotionVerbs = ['feel', 'love', 'prefer', 'like', 'enjoy', 'hate', 'dislike', ]
+verbs = emotionVerbs + ['recommend', 'suggest', 'want', 'want', 'advise', 'is', 'are', 'do', 'does']
+
+# adjectives
+adjectives = [
+    'good', 'great', 'amazing', 'awesome', 'best', 'favourite', 'delicious', 'breathtaking', 'tasty', 'mouth-watering',
+    'appetizing', 'flavoursome', 'delectable', 'disgusting', 'awful', 'terrible', 'tasteless', 'horrific', 'bad', 'sad',
+    'disappointed'
+]
+
+questionWords = ['why', 'what', 'where', 'when', 'how',
+                 'is', 'are', 'do', 'does', '?']
+
+keyWords = verbs + adjectives + adverbsOfTime + questionWords + [
+    'pizza', 'i', 'you', 'yes', 'no', 'thank', 'thanks',
+    "hello", "hi", "greetings", "morning", "afternoon", "evening", "howdy",
+    "maybe", "definitely", 'certain', 'probably', 'might', 'perhaps', 'possible', 'likely',
+]
