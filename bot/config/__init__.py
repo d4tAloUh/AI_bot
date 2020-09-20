@@ -125,6 +125,7 @@ missTemplates = [
 ]
 
 confidenceTemplates = [
+    'why are you {}'
     'Are you sure about that?',
     'Do you doubt that?',
     'Why are you so sure about that? 🤨',
@@ -147,9 +148,7 @@ agreeTemplates = [
 welcomeTemplates = [
     'Your welcome! Let`s talk about something else! What`s your favourite meal?',
     'No worries! Let`s talk about something else! Do you like pizza?',
-    'Let`s talk about something else! What`s the weather like today?',
-    'Let`s talk about something else! Cats or dogs?',
-    'Let`s talk about something else! Have you ever tried snowboarding?',
+    'Let`s talk about something else! What do you like?',
     'Let`s talk about something else! Do you like dancing?',
     'Let`s talk about something else! What plans do you have for tomorrow?',
 ]
@@ -237,7 +236,6 @@ totalDict = {
     'where': questionTemplate,
     'when': questionTemplate,
     'how': questionTemplate,
-    '?': questionTemplate,
 
     '* is * ?': questionTemplate,
     '* are * ?': questionTemplate,
@@ -286,8 +284,10 @@ totalDict = {
     'perhaps': confidenceTemplates,
     'possible': confidenceTemplates,
     'likely': confidenceTemplates,
+
     'no': confidenceTemplates,
     'yes': confidenceTemplates,
+
     'of course': confidenceTemplates,
     'for sure': confidenceTemplates,
     'no doubt': confidenceTemplates,

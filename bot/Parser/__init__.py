@@ -3,12 +3,6 @@ import re
 from ..config import totalDict, keyWords, questionTemplate, missTemplates, changeThemeTemplates, \
     adjectives, emotionVerbs, adverbsOfTime, futureAdverbs, pastAdverbs, questionWords
 
-'''
-1. check if key exists in sentence -> " i dont understand you"
-2. get type of key
-3. get collection of type
-4. get template string
-'''
 used: set = {""}
 usedSetChangeSubject: set = {""}
 
@@ -66,7 +60,9 @@ def parse_sentence(sentence: str):
         return random.choice(questionTemplate)
 
     formattedComb = sentence_transformation(wordList)
+    print(formattedComb)
     answer = check_combinations(formattedComb)
+    print(answer)
     if answer != '':
         return answer
 
