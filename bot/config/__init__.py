@@ -6,7 +6,16 @@ pizzasTemplates = [
 ]
 
 changeThemeTemplates =[
-    'Have you ever thought about, why we enjoy eating?'
+    'Have you ever thought about, why we enjoy eating?',
+    'Whatever. By the way, do you like pizza? Which one is your favourite?',
+    'I think you have something on your face. I almost forgot to ask you whether you have any dog? Cause i want one but can not decide on breed 🐶',
+    'Please, let\'s change topic of our conversation. Maybe lets talk about pizza? Margarita is my favourite :)',
+    'I dont want to talk about that. How is your family doing?',
+    'I hate talking about that. Tell me about your programming skills more 🧑‍💻👩‍💻',
+    'Please, let\'s change the direction of our conversation. Tell me about your best friend.',
+    'Dont want to talk about that for now, tell me about how is your job doing?',
+    'Thats a taboo topic. You should better tell me more about your relationships 💞.',
+    'This is off-limits. Do you think Trump is going to become a president for the second time and why?'
 ]
 
 feelingsTemplates = [
