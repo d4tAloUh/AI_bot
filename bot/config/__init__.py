@@ -5,8 +5,27 @@ pizzasTemplates = [
     'You say no more about that horrible pizza',
 ]
 
-changeThemeTemplates = [
-    'Have you ever thought about, why we enjoy eating?'
+
+changeThemeTemplates =[
+    'Have you ever thought about, why we enjoy eating?',
+    'Whatever. By the way, do you like pizza? Which one is your favourite?',
+    'I think you have something on your face. I almost forgot to ask you whether you have any dog? Cause i want one but can not decide on breed 🐶',
+    'Please, let\'s change topic of our conversation. Maybe lets talk about pizza? Margarita is my favourite :)',
+    'I dont want to talk about that. How is your family doing?',
+    'I hate talking about that. Tell me about your programming skills more 🧑‍💻👩‍💻',
+    'Please, let\'s change the direction of our conversation. Tell me about your best friend.',
+    'Dont want to talk about that for now, tell me about how is your job doing?',
+    'Thats a taboo topic. You should better tell me more about your relationships 💞.',
+    'This is off-limits. Do you think Trump is going to become a president for the second time and why?',
+    'What about the weather? Is it quite sunny today?',
+    'Btw, do you like running?',
+    'By the by, I want to try a new recipe today, do you have any suggestions?',
+    'Apart from that, your English sounds really professional! Where did you earn that skill?',
+    'Aside, i`m planning on watching a film tonight? Any recommendations?',
+    'Btw, is there anything you particularly enjoy doing these days?',
+    'By the by, what are your plans for the weekends?',
+    'Apart from that, I really believe it would be better if you studied now rather than chatted with me...?',
+    'Aside, do you love travelling?'
 ]
 
 feelingsTemplates = [
@@ -33,32 +52,34 @@ questionTemplate = [
 ]
 
 suggestionsTemplates = [
-    'Have you tried BBQ pizza?',
-    'Have you tried Mimosa pizza?',
-    'Have you tried California pizza?',
-    'I think you might like Chicago pizza',
-    'Try any pizza with mushrooms. It`s considered to be the second best topping in the world!',
-    'What about topping with black olives?'
+    # 'Have you tried BBQ pizza?',
+    # 'Have you tried Mimosa pizza?',
+    # 'Have you tried California pizza?',
+    # 'I think you might like Chicago pizza',
+    # 'Try any pizza with mushrooms. It`s considered to be the second best topping in the world!',
+    # 'What about topping with black olives?'
+    'Dou you really need my opinion? I think you should know this much better 😊',
+    'Maybe you don\'t need it at all? Go and have a bottle of beer. 🍺',
+    'I am not a part of you, don\'t ask me for help, i am too busy for that 🙄.',
+    'Am i your personal adviser? I dont remember when you paid me last time 🤑',
+    'I don\'t think you can afford that 💸'
 ]
 
 adjectiveTemplates = [
-    'Mmm... couldn`t agree more. Is there any pizza you think is overrated?',
-    'That`s true! What do you think about pizzas with pineapple in it?',
-    'I also think that! Do you know that the best pizza in the world is considered to be Pepperoni?',
+    # 'Mmm... couldn`t agree more. Is there any pizza you think is overrated?',
+    # 'That`s true! What do you think about pizzas with pineapple in it?',
+    # 'I also think that! Do you know that the best pizza in the world is considered to be Pepperoni?',
+    # 'Absolutely disagree. Maybe our opinions will coincide on another thing.',
+    # 'We are of one mind! Btw, fun fact: the word pizza dates back to 997 CE.'
+    'Mmm... couldn`t agree more. ',
+    'That`s true! But i have friends that would not agree on that.',
+    'I also think that! But my family thinks that I am dumb, because i have these opinion.',
     'Absolutely disagree. Maybe our opinions will coincide on another thing.',
-    'We are of one mind! Btw, fun fact: the word pizza dates back to 997 CE.'
-]
-
-changeTopicTemplates = [
-    'What about the weather? Is it quite sunny today?',
-    'Btw, do you like running?',
-    'By the by, I want to try a new recipe today, do you have any suggestions?',
-    'Apart from that, your English sounds really professional! Where did you earn that skill?',
-    'Aside, i`m planning on watching a film tonight? Any recommendations?',
-    'Btw, is there anything you particularly enjoy doing these days?',
-    'By the by, what are your plans for the weekends?',
-    'Apart from that, I really believe it would be better if you studied now rather than chatted with me...?',
-    'Aside, do you love travelling?',
+    'We are of one mind!',
+    'I think you are not ordinary.',
+    'Why you have such opinion?',
+    'What made you think so?',
+    'That\'s a negative'
 ]
 
 greetingTemplates = [
