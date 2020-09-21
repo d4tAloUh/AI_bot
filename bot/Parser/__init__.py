@@ -41,6 +41,8 @@ def check_combinations(formattedComb: str):
 def parse_sentence(sentence: str):
     # adds to dictionary all combinations of keyValues and *
     sentence = sentence.replace('?', ' ?')
+    sentence = sentence.replace(',', '')
+    sentence = sentence.replace('.', '')
 
     # split the sentence into words
     wordList = sentence.lower().split(" ")
