@@ -56,9 +56,8 @@ def check_combinations(formattedComb: str):
             return 'What else happened ' + adverbOfTime + '?'
         elif (formattedComb.find(adverbOfTime) != -1) and (adverbOfTime == 'today'):
             return 'What else happened today?'
-
     if formattedComb in totalDict:
-        return random.choice([i if i not in used else None for i in totalDict[formattedComb]])
+        return random.choice([i if i not in used else '' for i in totalDict[formattedComb]])
 
     return ''
 
@@ -69,6 +68,7 @@ def parse_sentence(sentence: str):
 
     # split the sentence into words
     wordList = sentence.lower().split(" ")
+
     if '?' in wordList:
         return random.choice(questionTemplate)
 
@@ -77,7 +77,7 @@ def parse_sentence(sentence: str):
 
     if answer != '':
         used.add(answer)
-        return answer
+        return answer.format(formattedComb)
 
     # otherwise returns related template
     for word in wordList:
