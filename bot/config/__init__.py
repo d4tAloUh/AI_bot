@@ -29,7 +29,7 @@ changeThemeTemplates = [
 
 feelingsTemplates = [
     'What exactly do you {} about it?',
-    'What else do you {} ?'
+    'What else do you {} ?',
     'Tell me more about it',
     # 'Oh, I know that feeling...',
     # 'I have the same feeling as you, believe me 🤥',
