@@ -59,7 +59,7 @@ suggestionsTemplates = [
 ]
 
 adjectiveTemplates = [
-    'Why is it {} ?'
+    'Why is it {} ?',
     'Mmm... couldn`t agree more. Is it really {} ?',
     # 'That`s true! But i have friends that would not agree on that.',
     # 'I also think that! But my family thinks that I am dumb, because i have these opinion.',
