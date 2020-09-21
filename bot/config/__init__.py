@@ -186,14 +186,14 @@ totalDict = {
     '* how * ?': questionTemplate,
     '* ?': questionTemplate,
 
-    'is': questionTemplate,
-    'are': questionTemplate,
-    'do': questionTemplate,
-    'does': questionTemplate,
+    # 'is': questionTemplate,
+    # 'are': questionTemplate,
+    # 'do': questionTemplate,
+    # 'does': questionTemplate,
     'why': questionTemplate,
     'what': questionTemplate,
-    'where': questionTemplate,
-    'when': questionTemplate,
+    # 'where': questionTemplate,
+    # 'when': questionTemplate,
     'how': questionTemplate,
 
     'good': adjectiveTemplates,
@@ -249,6 +249,8 @@ totalDict = {
 
     'thank you': welcomeTemplates,
     'thanks': welcomeTemplates,
+
+    'fine': ['Good to hear that! Tell me more about your day'],
 
     'how are you': ['Fine, thanks for asking. Let`s talk about something else! What`s the weather like today?'],
 }
