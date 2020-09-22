@@ -1,5 +1,9 @@
 # Alexey, the 🍕 pizza lover 🍕 (AI-bot)
+
+https://github.com/d4tAloUh/AI_bot
+=======
 ## This project was done by Karmeliuk Kostiantyn, Kupchyk Daryna, Myronovych Oleksandr.
+
 
 ### Firstly<br>
 Create file called .env in environment folder if you want to use the telegram bot

@@ -125,6 +125,10 @@ welcomeTemplates = [
     'Let`s talk about something else! Is there something you hate?',
 ]
 
+pastTimeTemplates = ["What else happened {} ?"]
+futureTimeTemplates = ["Interesting! What else is going to happen {} ?"]
+currentTimeTemplates = ["What else happened today?"]
+
 totalDict = {
     'margarita': pizzasTemplates,
     'chicago': pizzasTemplates,
@@ -157,34 +161,12 @@ totalDict = {
     '* love *': feelingsTemplates,
     'i love *': agreeTemplates,
 
-    'love':feelingsTemplates,
+    'love': feelingsTemplates,
     'prefer': feelingsTemplates,
     'like': feelingsTemplates,
     'enjoy': feelingsTemplates,
     'hate': feelingsTemplates,
     'dislike': feelingsTemplates,
-
-    'is * ?': questionTemplate,
-    'are * ?': questionTemplate,
-    'do * ?': questionTemplate,
-    'does * ?': questionTemplate,
-    'why * ?': questionTemplate,
-    'what * ?': questionTemplate,
-    'where * ?': questionTemplate,
-    'when * ?': questionTemplate,
-    'how * ?': questionTemplate,
-    '?': questionTemplate,
-
-    '* is * ?': questionTemplate,
-    '* are * ?': questionTemplate,
-    '* do * ?': questionTemplate,
-    '* does * ?': questionTemplate,
-    '* why * ?': questionTemplate,
-    '* what * ?': questionTemplate,
-    '* where * ?': questionTemplate,
-    '* when * ?': questionTemplate,
-    '* how * ?': questionTemplate,
-    '* ?': questionTemplate,
 
     # 'is': questionTemplate,
     # 'are': questionTemplate,
@@ -249,6 +231,19 @@ totalDict = {
 
     'thank you': welcomeTemplates,
     'thanks': welcomeTemplates,
+
+    'yesterday': pastTimeTemplates,
+    'ago': pastTimeTemplates,
+    'before': pastTimeTemplates,
+    'earlier': pastTimeTemplates,
+
+    'tomorrow': futureTimeTemplates,
+    'later': futureTimeTemplates,
+    'tonight': futureTimeTemplates,
+    'next': futureTimeTemplates,
+
+    'today': currentTimeTemplates,
+    'now': currentTimeTemplates,
 
     'fine': ['Good to hear that! Tell me more about your day'],
 

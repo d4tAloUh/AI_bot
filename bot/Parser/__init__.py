@@ -1,5 +1,4 @@
 import random
-import re
 from ..config import totalDict, keyWords, questionTemplate, missTemplates, changeThemeTemplates, \
     adjectives, adverbsOfTime, futureAdverbs, pastAdverbs
 
@@ -9,7 +8,7 @@ usedSetChangeSubject: set = {""}
 
 def sentence_transformation(wordList):
     formatted = []
-    for i, word in enumerate(wordList):
+    for word in wordList:
         if word in keyWords:
             formatted.append(word)
         elif len(formatted) > 0 and formatted[len(formatted) - 1] == "*":
@@ -24,22 +23,15 @@ def check_combinations(formattedComb: str):
         if (formattedComb.find('i feel ' + adjective) != -1) \
                 or (formattedComb.find('i am ' + adjective) != -1):
             return f'Why do you feel {adjective}?'
-    for adverbOfTime in adverbsOfTime:
-        if (formattedComb.find(adverbOfTime) != -1) and (adverbOfTime in futureAdverbs):
-            return 'Interesting! Tell me more! What else is going to happen ' + adverbOfTime + '?'
-        elif (formattedComb.find(adverbOfTime) != -1) and (adverbOfTime in pastAdverbs):
-            return 'What else happened ' + adverbOfTime + '?'
-        elif (formattedComb.find(adverbOfTime) != -1) and (adverbOfTime == 'today'):
-            return 'What else happened today?'
 
     if formattedComb in totalDict:
-        return random.choice([i if i not in used else '' for i in totalDict[formattedComb]])
+        return random.choice([i if i not in used else None for i in totalDict[formattedComb]])
 
     return ''
 
 
 def parse_sentence(sentence: str):
-    # adds to dictionary all combinations of keyValues and *
+    # remove ./, from sentence and add space to question mark
     sentence = sentence.replace('?', ' ?')
     sentence = sentence.replace(',', '')
     sentence = sentence.replace('.', '')
@@ -47,13 +39,16 @@ def parse_sentence(sentence: str):
     # split the sentence into words
     wordList = sentence.lower().split(" ")
 
+    if len(wordList) < 2:
+        return "I want to hear more from you..."
+
     if '?' in wordList:
         return random.choice(questionTemplate)
 
     formattedComb = sentence_transformation(wordList)
     answer = check_combinations(formattedComb)
 
-    if answer != '':
+    if answer != '' and answer is not None:
         used.add(answer)
         return answer.format(formattedComb)
 
