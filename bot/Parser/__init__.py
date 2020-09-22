@@ -33,7 +33,7 @@ def check_combinations(formattedComb: str):
             return 'What else happened today?'
 
     if formattedComb in totalDict:
-        return random.choice([i if i not in used else '' for i in totalDict[formattedComb]])
+        return random.choice([i if i not in used else '' for i in totalDict[formattedComb]["array"]])
 
     return ''
 
@@ -57,21 +57,28 @@ def parse_sentence(sentence: str):
         used.add(answer)
         return answer.format(formattedComb)
 
+    priority = -1
     # otherwise returns related template
     for word in wordList:
         try:
-            template = random.choice([i if i not in used else None for i in totalDict[word]])
-            used.add(template.format(word))
-            return template.format(word)
+            template = random.choice([i if i not in used else None for i in totalDict[word]["array"]])
+            if totalDict[word]["priority"] > priority:
+            # used.add(template.format(word))
+                answer = template.format(word)
+            # return template.format(word)
         except KeyError:
             continue
         #     this except means there is no unused templates
         except AttributeError:
             used.clear()
-            answer = random.choice([i if i not in used else None for i in changeThemeTemplates])
+            answer = random.choice([i if i not in used else None for i in changeThemeTemplates["array"]])
             usedSetChangeSubject.add(answer)
-            if len(usedSetChangeSubject) == len(changeThemeTemplates):
+            if len(usedSetChangeSubject) == len(changeThemeTemplates["array"]):
                 usedSetChangeSubject.clear()
             return answer
-
-    return random.choice(missTemplates)
+    print(priority, answer)
+    if answer != '':
+        used.add(answer)
+        return answer
+    else:
+        return random.choice(missTemplates)

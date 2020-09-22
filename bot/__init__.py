@@ -10,7 +10,7 @@ from .config import greetingTemplates
 
 def run_parser():
     print("TYPE c TO LEAVE")
-    print(random.choice(greetingTemplates))
+    print(random.choice(greetingTemplates["array"]))
 
     while True:
         text = input()
