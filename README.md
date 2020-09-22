@@ -1,5 +1,5 @@
 # Alexey, the 🍕 pizza lover 🍕 (AI-bot)
-
+https://github.com/d4tAloUh/AI_bot
 ### Firstly<br>
 Create file called .env in environment folder if you want to use the telegram bot
 ```
